@@ -1,6 +1,13 @@
 # Machine-Learning-Project
 
-!#Sites We Do Not Want To Forget About:
+## Project Team
+
+Sam Barton
+Mason McCoy
+Madhu Venkidusamy
+Hema Sankaran
+
+## Sites We Do Not Want To Forget About:
   https://www.worldweatheronline.com/developer/api/
   
   https://stackabuse.com/using-machine-learning-to-predict-the-weather-part-1/
@@ -20,13 +27,15 @@
   
   some help with data-prep: https://developers.arcgis.com/python/sample-notebooks/part1-prepare-hurricane-data/
   
- Wildfires dataset(https://www.kaggle.com/rtatman/188-million-us-wildfires), analysis & visuals: https://towardsdatascience.com/leveraging-machine-learning-to-predict-wildfires-contributing-to-the-united-nations-sustainable-a10c5044dcae#f077, 
+  Wildfires dataset(https://www.kaggle.com/rtatman/188-million-us-wildfires), 
+  analysis & visuals: https://towardsdatascience.com/leveraging-machine-learning-to-predict-    wildfires-contributing-to-the-united-nations-sustainable-a10c5044dcae#f077, 
  
- dataset with storm id and range. Might need to be merged with some other data to predict 'storm intensity over time' or 'severe storm location': https://www1.ncdc.noaa.gov/pub/data/swdi/stormevents/csvfiles/ 
+  dataset with storm id and range. Might need to be merged with some other data to predict 'storm intensity over time' or 'severe storm location'.                
+  https://www1.ncdc.noaa.gov/pub/data/swdi/stormevents/csvfiles/ 
   
- ##may be something other than storms?: 
+## may be something other than storms?: 
  
-https://archive.ics.uci.edu/ml/machine-learning-databases/parkinsons/
+  https://archive.ics.uci.edu/ml/machine-learning-databases/parkinsons/
  
   
   
