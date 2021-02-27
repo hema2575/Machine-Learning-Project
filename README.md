@@ -2,10 +2,10 @@
 
 ## Project Team
 
-Sam Barton
-Mason McCoy
-Madhu Venkidusamy
-Hema Sankaran
+  Sam Barton
+  Mason McCoy
+  Madhu Venkidusamy
+  Hema Sankaran
 
 ## Sites We Do Not Want To Forget About:
   https://www.worldweatheronline.com/developer/api/
