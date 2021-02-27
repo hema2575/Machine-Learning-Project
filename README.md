@@ -3,8 +3,11 @@
 ## Project Team
 
   Sam Barton
+  
   Mason McCoy
+  
   Madhu Venkidusamy
+  
   Hema Sankaran
 
 ## Sites We Do Not Want To Forget About:
@@ -33,7 +36,7 @@
   dataset with storm id and range. Might need to be merged with some other data to predict 'storm intensity over time' or 'severe storm location'.                
   https://www1.ncdc.noaa.gov/pub/data/swdi/stormevents/csvfiles/ 
   
-## may be something other than storms?: 
+## may be something other than storms?
  
   https://archive.ics.uci.edu/ml/machine-learning-databases/parkinsons/
  
