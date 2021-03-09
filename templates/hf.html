@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Heart Failure</title>
-<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<title>Heart Disease</title>
+<link href="../static/css/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
 <div id="wrapper">
    <div id="branding">
-   <h1>Heart Failure</h1>
+   <h1>Heart Disease</h1>
    <ul class="topNav">
 	    <li><a href="index.html" class="topNavAct">HOME</a></li>
 		<li><a href="hf.html">HEART DISEASE</a></li>
@@ -20,7 +20,7 @@
 		<li><a href="#">SUBSCRIBE</a></li>
 		<li><a href="#">ABOUT US</a></li>
 		<li><a href="#">ARCHIVE</a></li> -->
-		<li><a href="#" class="topNavLast">SOME OTHER DISEASE</a></li>
+		<!-- <li><a href="#" class="topNavLast">SOME OTHER DISEASE</a></li> -->
         
 	  </ul><br class="clear" />
    </div>
@@ -30,12 +30,12 @@
 	  <h2>
        Using ML Classification Algorithms to Diagnose Diseases and Pathologies
       </h2>
-	  <img src="images/heart.png" width="277" height="266" alt="" />
+	  <img src="../static/images/heart.png" width="277" height="266" alt="" />
 	  <!-- <h3>What We Speak.</h3> -->
 	  <br class="clear bottomClear" />
-	  <p> SOME TEXT HERE. In a world of complicated and noisy data, healthcare data is among the most difficult to analyze. etc etc etc </p> <br /><br />
-	  <p> In this project, we aimed to help analyze health outcomes by determining mortality outcomes for patients with heart disease by evaluating an array of factors using a Random Forest Classification model. etc etc etc idk  </p> <br /><br />
-	  <p> SOME MORE WORDS THAT DESCRIBE WHAT WE DID. DESCRIPTOR TEXT. In this project, we aimed to help analyze health outcomes by determining mortality outcomes for patients with heart disease by evaluating an array of factors using a Random Forest Classification model. etc etc etc idk  </p> <br /><br /> 
+	  <p> In a world of complicated and noisy data, healthcare data is among the most difficult to analyze. Doctors, researchers, and other healthcare professionals have invested decades of efforts into creating efficient methods of diagnosing patients quickly and accurately, in a way that enables the best care and healthcare outcomes possible. In this project, we aim to make this task a little simpler for them by enabling the use of Machine Learning tools that are trained to identify a pathology. </p> <br /><br />
+	  <p> Specifically, we tested different classification methods on two different cases: heart disease and breast cancer. In the case of heart disease, our models were trained to predict if a certain patient case or set of symptoms would lead to mortality, or death event of 0 or 1. In the case of breast cancer, our models were given a set of metrics regarding a tumor, and were trained to classify if they were benign or malignant.</p> <br /><br />
+	  <p> We used several different classification techniques in this project: an XGB Classifier, Linear SVC model, Logistic Regression (LGR), Random Forest Classification (RFC), and K-Nearest-Neighbor (KNN). More details regarding some of these techniques will be discussed in further detail below.  </p> <br /><br /> 
 	</div>
 	<!-- <div class="sideBar">
 	  <div class="sideBarListBox">
@@ -75,34 +75,37 @@
    </div>
    </div>
    <div class="midBox1">
-		 <span><img src="images/c2_i6.png" width="303" height="420" alt="" /></span>
+		 <span><img src="../static/images/HF_FtrCorr.png" width="280" height="250" alt="" /></span>
 	     <div class="midBox1Top">
-		 <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
-		 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum<br /> dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non<br /> proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		 <a href="#"><img src="images/c2_i2.png" width="133" height="40" alt="" /></a>
-		 <a href="#"><img src="images/c2_i3.png" width="84" height="40" alt=""  /></a>
-		 <a href="#"><img src="images/c2_i4.png" width="93" height="40" alt=""  /></a>
-		 <a href="#"><img src="images/c2_i5.png" width="101" height="38" alt=""  /></a>		 </div>
+		 <h3>Feature Correlation</h3>
+		 <h4>How is each feature correlated with a death event?</h4>
+		 <p>
+			Here, we find that age is highly correlated to a death event.
+			<img src="../static/images/de_HF_Ftl_age.png" width="280" height="250" alt="" />
+		 </p> 
+		 		 
+		</div>
 		 <div class="midBox1Bottom">
-		  <h4>Neque porro quisquam?</h4>
-		  <ul>
-		   <li class="cat002"><a href="#" >Lorem Ipsum is simply dummy text of the printing</a></li>
-		   <li class="cat002"><a href="#" >It is a long established fact that a reader</a></li>
-		   <li class="cat002"><a href="#" >There are many variations of passages of Lorem Ipsum</a></li>
-		   <li class="cat002"><a href="#" >Contrary to popular belief, Lorem Ipsum is not simply random text</a></li>
-		  </ul>
 		 </div>
 		 <br class="clear" />
 	  </div>
    <div class="midBox2">
 	  <div class="midBox2L">
-		 <h2>Where Does It Come From?</h2>
-		 <h3>Contrary to popular belief, Lorem Ipsum is not<br /> simply random text.</h3>
-		 <p>It is a long established fact that a reader will be distracted by the <br />readable content of a page when looking at its layout.</p>
+		 <h2>Data Exploration on Heart Disease</h2>
+		 <h3>Which features are most important?</h3>
+		 <p>Feature analysis from the XGB model are shown here.</p>
 	  </div>
-	  <img src="images/c3_i7.png" width="460" height="237" alt="" />
+	  <img src="../static/images/de_HF_FtrImp.png" width="460" height="237" alt="" />
    </div>
-   <div id="footer">
+   <div class="midBox2">
+	<div class="midBox2L">
+	   <h2>KNN Results</h2>
+	   <h3>Note that k: 11 seems to be the best choice for this dataset.</h3>
+	   <p>k=11 Accuracy of the KNN prediction: 0.667</p>
+	</div>
+	<img src="../static/images/hf_knn-acc.png" width="460" height="237" alt="" />
+ </div>
+   <!-- <div id="footer">
     <div class="footerForm">
 	  <h3>Lorem Ipsum passages</h3>
 	   <h4>more recently with desktop publishing</h4>
@@ -120,13 +123,13 @@
 	  </div>
 	<p>All the Lorem Ipsum generators on the<br /> Internet tend to repeat predefined chunks as<br /> necessary, making this the first true generator<br /> on the Internet. It uses a dictionary of over<br /> 200 Latin words, combined with a handful of<br /> model sentence structures, to generate Lorem<br /> Ipsum which looks reasonable. The generated<br /> Lorem Ipsum is therefore always free from<br /> repetition, injected humour, or<br /> non-characteristic words etc.</p>
 	<br class="clear" />
-   </div>
+   </div> -->
  </div>
     <div id="footerContainer">
-    <p>
+    <!-- <p>
 	 <label>Designed by <a href="http://vectorart.org">VectorArt</a></label>
 	 <span>Copyright 2009 Lorem Ipsum. All Rights Reserved</span>
-	</p>
+	</p> -->
    </div>
 </body>
 </html>

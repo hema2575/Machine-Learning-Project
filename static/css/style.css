@@ -370,13 +370,14 @@ p.quoteBar {
 	margin-bottom:20px;
 }
 .midBox1 span img{
-	float:right;
+	float:left;
 	margin-left:10px;
+	margin-right:10px;
 }
 .midBox1Top {
 	width:580px;
-	text-align:right;
-	float:right;
+	text-align:left;
+	float:left;
 }
 .midBox1Top h3{
 	font-family:Georgia, "Times New Roman", Times, serif;
