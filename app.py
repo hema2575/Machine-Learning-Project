@@ -29,14 +29,9 @@ app = Flask(__name__)
 
 @app.route("/")
 def helloWorld():
-    return (
-        "Links to Data:<br/>"
-        "/breast_cancer</br>"
-        "/breast_cancer_full</br>"
-        "/heart_failure<br/>"
-        )
+    return render_template('index.html')
 
-@app.route("/breast_cancer")
+@app.route("/bc.html")
 def cancerData():
     session = Session(engine)
     
@@ -62,7 +57,7 @@ def cancerData():
         data_dict["status"] = status
         data.append(data_dict)
     
-    return jsonify(data)
+    return render_template('bc.html', data = data)
 
 @app.route("/breast_cancer_full")
 def cancerDataF():
@@ -118,7 +113,7 @@ def cancerDataF():
     
     return jsonify(data)
 
-@app.route("/heart_failure")
+@app.route("/hf.html")
 def heartData():
     session = Session(engine)
     
@@ -146,25 +141,7 @@ def heartData():
         data_dict["DEATH_EVENT"] = DEATH_EVENT
         data.append(data_dict)
     
-    return render_template('index.html', data = data)
-
-# NEW SHIT
-    
-    
-    """
-    class heartTable(Table):
-        name = Col('Name')
-        description = Col('Description')
-        
-    class cancerRecord():
-        def __init__(self, name, description):
-            self.name = name
-            self.description - description
-    
-    heart_records = session.query.Heart.all()
-    table = heartTable(heart_records)
-    return table.__html__()
-    """
+    return render_template('hf.html', data = data)
     
 if __name__ == '__main__':
     app.run
