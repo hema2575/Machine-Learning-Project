@@ -12,9 +12,6 @@ from sqlalchemy import create_engine
 from flask import Flask, jsonify, render_template
 from config import password
 
-# NEW SHIT
-
-
 Base = automap_base()
 
 engine = create_engine("postgresql://postgres:" + password + "@localhost/diseaseML")
