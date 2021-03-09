@@ -89,7 +89,7 @@ ul.topNav  {
 	text-decoration:none;
 	 border-right:1px dotted #000000;
 }
-.topNav li a.topNavAct{
+/* .topNav li a.topNavAct{
 	background:#FFFFFF url(../images/topNavSep.png) no-repeat right bottom;
 	color:#000000;
 	text-decoration:none;
@@ -97,7 +97,7 @@ ul.topNav  {
 	position:relative;
 	top:-5px;
 	border-right:none;
-}
+} */
 .topNav li a.topNavLast{
 	border-right:none;
 	padding-left:15px;
