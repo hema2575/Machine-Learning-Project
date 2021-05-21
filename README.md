@@ -12,7 +12,7 @@
   
  # Project Objective
  
- This project trains a few ML models and analyses the accuracy of their precision in predicting the classification of tumor as malignant and benign. To complete this ML project we are using the supervised machine learning classifier algorithms.
+ This project trains a few ML models and analyses the accuracy of their precision in predicting the classification of tumor and predicting heart failure. To complete this ML project we are using the supervised machine learning classifier algorithms.
   
   ## DataPrep:
   
